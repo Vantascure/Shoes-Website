@@ -1,0 +1,9 @@
+@import 'nav.css';
+@import 'footer.css';
+
+.text-container {
+    width: 100%;
+    height: calc(100vh - 240px);
+    padding: 10vh 15vw;
+    text-align: justify;
+}

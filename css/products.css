@@ -1,0 +1,53 @@
+@import 'nav.css';
+@import 'footer.css';
+
+.products-section {
+    width: 100%;
+    padding: 10px 5vw;
+    background-color: #e0e0e0;
+}
+
+.products-section h1 {
+    margin: 10px 0;
+    font-size: 30px;
+    text-align: center;
+}
+
+.products-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px 0;
+    justify-content: center;
+}
+
+.products-container a {
+    text-decoration: none;
+    color: black;
+}
+
+.product-card {
+    width: 300px;
+    height: 400px;
+    margin: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.product-img {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+}
+
+.product-img img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.product-info h2 {
+    margin-bottom: 5px;
+}

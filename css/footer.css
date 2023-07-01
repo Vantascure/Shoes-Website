@@ -1,0 +1,61 @@
+footer {
+    position: relative;
+    width: 100%;
+    padding: 10px 5vw;
+    background-color: #383838;
+}
+
+.footer-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.footer-logo-container {
+    display: flex;
+    width: 45%;
+    color: #d1d1d1;
+}
+
+.footer-logo-container img {
+    filter: invert(1);
+    height: 150px;
+}
+
+.footer-description {
+    display: block;
+    height: 150px;
+    margin-left: 25px;
+    overflow: hidden;
+}
+
+.footer-description h2 {
+    margin-bottom: 10px;
+}
+
+.footer-description p {
+    text-align: justify;
+}
+
+.pages-list {
+    color: #fff;
+    list-style: none;
+}
+
+.pages-list-title {
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+.pages-list li {
+    margin-bottom: 7px;
+}
+
+.pages-list-link {
+    color: #fff;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 800px) {
+
+}

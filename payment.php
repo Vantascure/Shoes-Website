@@ -1,0 +1,103 @@
+<?php
+  if (isset($_POST["submit"])) {
+    echo "<script>alert('Payment Successful.');</script>";
+    
+}else {
+      echo "<script>alert('Error Please Try Again.');</script>";
+    }
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>ShoeX - Payment</title>
+
+	<link rel="stylesheet" href="css/payment.css">
+	
+</head>
+
+
+<body>
+
+	<nav></nav>
+
+        <h2>Checkout</h2>
+        
+        <div class="row">
+          <div class="col-75">
+            <div class="container">
+                
+              <form action="complete.php" method="post">
+              
+                <div class="row">
+                  <div class="col-50">
+                    <h3>Billing Address</h3>
+                    <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Ali B Abu">
+
+                    <label for="email"><i class="fa fa-envelope"></i> Email</label>
+                    <input type="text" id="email" name="email" placeholder="ali@example.com">
+
+                    <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+                    <input type="text" id="adr" name="address" placeholder="123, Jalan Ali, Lorong Abu">
+
+                    <label for="city"><i class="fa fa-institution"></i> City</label>
+                    <input type="text" id="city" name="city" placeholder="Sunway">
+        
+                    <div class="row">
+                      <div class="col-50">
+                        <label for="state">State</label>
+                        <input type="text" id="state" name="state" placeholder="Selangor">
+                      </div>
+                      <div class="col-50">
+                        <label for="zip">Zip</label>
+                        <input type="text" id="zip" name="zip" placeholder="12345">
+                      </div>
+                    </div>
+                  </div>
+        
+                  <div class="col-50">
+                    <h3>Payment</h3>
+                    <label for="fname">Accepted Cards</label>
+                    <div class="icon-container">
+                      <img src="images/cc-visa-brands.svg" width="25px">
+                      <img src="images/cc-mastercard-brands.svg" width="25px">
+                      <img src="images/cc-paypal-brands.svg" width="25px">
+                    </div>
+                    <label for="cname">Name on Card</label>
+                    <input type="text" id="cname" name="cardname" placeholder="Ali Bin Abu">
+                    <label for="ccnum">Credit card number</label>
+                    <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+                    <label for="expmonth">Exp Month</label>
+                    <input type="text" id="expmonth" name="expmonth" placeholder="January">
+                    <div class="row">
+                      <div class="col-50">
+                        <label for="expyear">Exp Year</label>
+                        <input type="text" id="expyear" name="expyear" placeholder="2021">
+                      </div>
+                      <div class="col-50">
+                        <label for="cvv">CVV</label>
+                        <input type="text" id="cvv" name="cvv" placeholder="696">
+                      </div>
+                    </div>
+                  </div>
+                  
+                </div>
+                <label>
+                  <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing address
+                </label>
+                <input type="submit" name="submit" value="Continue to checkout" class="btn">
+              </form>
+            </div>
+          </div>
+          
+        </div>
+    <br>
+	<footer></footer>
+</body>
+</html>
+
+<script src="js/nav.js"></script>
+<script src="js/footer.js"></script>

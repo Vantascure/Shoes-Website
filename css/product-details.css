@@ -1,0 +1,79 @@
+@import 'nav.css';
+@import 'footer.css';
+
+.product-section {
+    width: 100%;
+    padding: 10px 5vw;
+}
+
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 76%;
+    object-fit: cover;
+    justify-content: space-around;
+    /*align-items: center; */  
+}
+
+.product-img, .product-details {
+    flex-basis: 50%;
+    min-width: 350px;
+    padding: 20px;
+}
+
+.product-img img {
+    width: 100%;
+}
+
+.smallimgrow{
+  display: flex;
+  justify-content: space-between;
+}
+
+.smallimgcol{
+  flex-basis: 24%;
+  cursor: pointer;
+}
+
+
+.product-details h4{
+  margin: 20px 0;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.product-details select{
+  display: block;
+  padding: 10px;
+}
+
+.product-details input{
+  width: 30px;
+  height: 20px;
+}
+
+.product-details h3{
+  margin: 20px 0;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.product-details button{
+  display: inline-flex;
+  width: 80px;
+  height: 20px;
+  padding: 0;
+  background: lightgray;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  overflow: hidden;
+  cursor: pointer;
+  align-items: center;
+  text-align: center;
+}
+
+.product-details a{
+  text-indent: 7px;
+}
+

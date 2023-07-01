@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShoeX | NIKE JR. TIEMPO LEGEND 9 CLUB MG</title>
+
+    <link rel="stylesheet" href="css/product-details.css">
+</head>
+<body>
+    
+    <nav></nav>
+
+    <div class="product-section">
+        <div class="product-container">
+            <div class="product-img">
+                <img src="images/8_NIKE JR. TIEMPO LEGEND 9 CLUB MG.jpg" id="pimg">
+            
+              <div class="smallimgrow">
+                <div class="smallimgcol">
+                  <img src="images/shoe8_1.png", width="100%" class="simg">
+                </div>
+                <div class="smallimgcol">
+                  <img src="images/shoe8_2.png", width="100%" class="simg">
+                </div>
+                <div class="smallimgcol">
+                  <img src="images/shoe8_3.png", width="100%" class="simg">
+                </div>
+                <div class="smallimgcol">
+                  <img src="images/shoe8_4.png", width="100%" class="simg">
+                </div>
+             </div>
+            </div>
+            
+            <div class="product-details">
+                <h1>NIKE JR. TIEMPO LEGEND 9 CLUB MG</h1>
+                
+                <h4>RM 139</h4>
+                
+                <label for="size">Size (UK):</label>
+                <select name="size" id="prod_size" required>
+                    <option value= none>Select Your Size</option>
+                    <option value="6">6</option>
+                    <option value="6.5">6.5</option>
+                    <option value="7">7</option>
+                    <option value="7.5">7.5</option>
+                    <option value="8">8</option>
+                    <option value="8.5">8.5</option>
+                    <option value="9">9</option>
+                    <option value="9.5">9.5</option>
+                    <option value="10">10</option>
+                    <option value="10.5">10.5</option>
+                    <option value="11">11</option>
+                    <option value="11.5">11.5</option>
+                    <option value="12">12</option>
+                </select><br>
+                
+                
+                <label for="qty">Quantity:</label>
+                <input type="number" name="qty" id="prod_qty" value="0" min="1" max="10" required>
+
+                <button>
+                <a href="cart.html">Add to cart</a>
+                </button>
+                
+                <h3>Product Details</h3>
+                
+                <p>The Nike Jr. Tiempo Legend 9 Club MG is a low-profile design that's reinvented for fast play.The upper features raised areas throughout the strike zone for precise dribbling, passing and shooting, while studs on the bottom provide traction for quick cuts and sudden stops.
+                </p>
+              
+            </div>
+        </div>
+    </div>
+
+    <footer></footer>
+</body>
+</html>
+
+<script src="js/nav.js"></script>
+<script src="js/footer.js"></script>
+<script src="js/prodgallery.js"></script>
+<script>
+  window.localStorage.setItem('prod8_name', 'NIKE MERCURIAL SUPERFLY 8 ACADEMY KM MG');
+  window.localStorage.setItem('prod8_value', '139.00')
+  
+      document.querySelector('#prod_qty').addEventListener('change',function(){
+        console.log(this.value);
+        localStorage.setItem('prod8_qty',this.value);
+      })
+    
+      document.querySelector('#prod_size').addEventListener('change',function(){
+        console.log(this.value);
+        localStorage.setItem('prod8_size',this.value);
+      })
+    </script>
